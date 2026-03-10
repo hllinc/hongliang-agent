@@ -44,6 +44,7 @@ provider = Cloudflare
 access_key_id = $R2_ACCESS_KEY_ID
 secret_access_key = $R2_SECRET_ACCESS_KEY
 endpoint = https://${CF_ACCOUNT_ID}.r2.cloudflarestorage.com
+region = auto
 acl = private
 no_check_bucket = true
 EOF
