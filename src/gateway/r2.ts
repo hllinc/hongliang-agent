@@ -31,6 +31,7 @@ export async function ensureRcloneConfig(sandbox: Sandbox, env: MoltbotEnv): Pro
     `access_key_id = ${env.R2_ACCESS_KEY_ID}`,
     `secret_access_key = ${env.R2_SECRET_ACCESS_KEY}`,
     `endpoint = https://${env.CF_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+    'region = auto',
     'acl = private',
     'no_check_bucket = true',
   ].join('\n');
