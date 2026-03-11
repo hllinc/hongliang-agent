@@ -55,5 +55,10 @@ export function buildEnvVars(env: MoltbotEnv): Record<string, string> {
   if (env.R2_SECRET_ACCESS_KEY) envVars.R2_SECRET_ACCESS_KEY = env.R2_SECRET_ACCESS_KEY;
   if (env.R2_BUCKET_NAME) envVars.R2_BUCKET_NAME = env.R2_BUCKET_NAME;
 
+  // AWS credentials (for Bedrock)
+  if (env.AWS_REGION) envVars.AWS_REGION = env.AWS_REGION;
+  if (env.AWS_ACCESS_KEY_ID) envVars.AWS_ACCESS_KEY_ID = env.AWS_ACCESS_KEY_ID;
+  if (env.AWS_SECRET_ACCESS_KEY) envVars.AWS_SECRET_ACCESS_KEY = env.AWS_SECRET_ACCESS_KEY;
+
   return envVars;
 }
